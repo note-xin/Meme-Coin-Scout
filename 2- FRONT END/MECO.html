@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MECO CHAN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../3- BACK END/style.css">
+</head>
+<body> 
+    <script src="../3- BACK END/script.js"></script>
+    <div>
+        <h1>LIVE NEW COINS</h1>
+        <p>Here are the latest coins listed on Coin Market. Do not blindly trust these... many scams are run through here</p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="recent-tab" data-toggle="tab" href="#recent">Recently Added</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pinned-tab" data-toggle="tab" href="#pinned">Pinned</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="recent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>#</th>
+                            <th>Coin Name</th>
+                            <th>Token Price</th>
+                            <th>Blockchain</th>
+                            <th>Added</th>
+                        </tr>
+                    </thead>
+                    <tbody class="coinList" id ="newList">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="pinned">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th>#</th>
+                            <th id="nameCell">Coin Name</th>
+                            <th>Token Price</th>
+                            <th>Blockchain</th>
+                            <th>Added</th>
+                        </tr>
+                    </thead>
+                    <tbody class="coinList" id="pinnedList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="coin-info">
+        <h3><span id="tokenName"></span></h3>
+        <div class="info-row">
+            <div id="tokenPrice" class="data-container">
+                <div class="data-label">Token Price</div>
+                <div class="data-value"></div>
+            </div>
+            
+            <div id="blockchain" class="data-container">
+                <div class="data-label">Blockchain</div>
+                <div class="data-value"></div>
+            </div>
+        </div>
+        <div class="info-row">
+            <div id="1h" class="data-container">
+                <div class="data-label">1h</div>
+                <div class="data-value"></div>
+            </div>
+            
+            <div id="24h" class="data-container">
+                <div class="data-label">24h</div>
+                <div class="data-value"></div>
+            </div>
+        </div>
+        <div class="data-group">
+            <div id="fullyDilutedMC" class="data-container">
+                <div class="data-label">Fully Diluted Market Cap :</div>
+                <div class="data-value"></div>
+            </div>
+            
+            <div id="volume" class="data-container">
+                <div class="data-label">Volume :</div>
+                <div class="data-value"></div>
+            </div>
+        </div>
+        <button type="button" class="custom-button" id="gotoMarket">Visit Market</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
